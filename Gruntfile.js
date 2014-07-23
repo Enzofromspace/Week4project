@@ -7,14 +7,14 @@ module.exports = function(grunt) {
    sass: {
    	dist: {
    	 	files: {
-   	 		'css/main.css' : 'css/main.scss'
+   	 		'css/style.css' : 'css/style.scss'
    	 	}
    		
    	}
    },
  watch: {
  	css:{
- 		files: ['css/main.scss'],
+ 		files: ['css/style.scss'],
  		tasks: ['sass', 'autoprefixer']
  		}
  	},
@@ -26,7 +26,7 @@ module.exports = function(grunt) {
  			browsers: ['last 5 version', 'ie 7', 'ie 8', 'ie 9']
  		},
  		no_dest: {
- 			src: 'css/main.css'
+ 			src: 'css/style.css'
  		}
  	},
  	connect: {
