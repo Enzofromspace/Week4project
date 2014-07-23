@@ -165,3 +165,95 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   height: 0;
   clear: both;
 }
+
+body {
+  font-family: Helvetica, sans-serif;
+  background: url(../images/greyzz.png);
+}
+body p {
+  margin: 0;
+}
+
+.wrapper, .header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul {
+  background-color: #222d3f;
+  padding: 1%;
+  margin: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #222d3f), color-stop(64%, #2a4766), color-stop(64%, #2a4766), color-stop(100%, #4e647b));
+  /* Chrome,Safari4+ */
+}
+.nav ul li {
+  display: inline;
+  padding: 1%;
+  color: white, #fff;
+  font-family: Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: all 1s;
+}
+a:hover {
+  color: #bee0e7;
+}
+
+header {
+  background: url(../images/NIedit.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 100px;
+  height: 100%;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+  border-top: 10px solid #064000;
+  box-shadow: 0px 2px 10px 0px rgba(50, 50, 50, 0.54);
+}
+
+.brief {
+  background: mintcream;
+}
+
+article {
+  background: #bee0e7;
+  width: 70%;
+  float: left;
+}
+
+.reflect {
+  background: mintcream;
+}
+
+.teambox {
+  background: mintcream;
+  padding-bottom: 1%;
+}
+.teambox h2 {
+  text-align: center;
+  color: #6b6f78;
+}
+.teambox .team {
+  width: 29%;
+  float: left;
+  margin: 1% 1.5% 2% 2.5%;
+  padding-top: 23%;
+}
+
+aside {
+  width: 30%;
+  float: right;
+}
+
+footer {
+  clear: both;
+  background: #064000;
+}
