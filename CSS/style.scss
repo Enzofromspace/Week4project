@@ -20,12 +20,13 @@ body{
 	margin:0;
 	line-height: 1.5;
 	letter-spacing: 1;
+	h2{
+		// font-family: 'Cinzel', serif;
+	}
 
 }
-.header{
-	width: 100%;
-	margin: 0;
-	padding:0;
+.uniform{
+	margin:0 auto;
 }
 
 .nav ul{
@@ -65,7 +66,49 @@ header{
 	padding:100px;
 	height:100%;
 	// resize image to 1300px wide
+		h1 {
+	 		font-family: 'Cinzel', serif;
+	 		color:#fff;
+			font-size: 72px;
+			margin:0 auto;
+			line-height: 1;
+			text-shadow: 0px -3px 12px $llblue;
+		}
+		h1, p{
+			text-align: center;
+		}
+		P{
+
+		}
 }
+.circle{
+  margin: 0 auto;
+  width:200px;
+  height:200px;
+  background: darkorange;
+  border-radius:50%;
+  border:10px outset black;
+ -webkit-box-shadow: inset 0px 1px 21px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 0px 1px 21px -1px rgba(0,0,0,0.75);
+box-shadow: inset 0px 1px 21px -1px rgba(0,0,0,0.75);
+}
+.triangle{
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 20px 100px 20px;
+border-color: transparent transparent #000 transparent;
+margin: 0 auto;
+}
+.tdown{
+margin:0 auto;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 80px 20px 0 20px;
+border-color: #333 transparent transparent transparent;
+}
+
 .container{
 	width: 80%;
 	margin: 0 auto;
@@ -137,6 +180,8 @@ article{
 	 	float:left;
 	 	margin: 1% 1.5% 2% 2.5%;
 	 	padding-top: 23%;
+	 	background-image: url(../images/doe.jpeg);
+	 	background-size: 100%;
 	 }
 
 }
@@ -148,10 +193,23 @@ aside{
 
 footer{
 	clear:both;
+	width: 100%;
+	position: absolute;
 	background-image:
 	  linear-gradient(
         to top, 
-        $dgreen, $mgreen);
+        $dblue, $mblue);
+	  .lbox{
+	  	width: 20%;
+	  	float:right;
+	  	ul{
+	  		border-right: 1px solid #000;
+	  		border-left: 1px solid #333;
+	  		li{
+	  		list-style: none;
+	  		}
+	  	}
+	}
     
 }
 

@@ -143,10 +143,8 @@ body {
   line-height: 1.5;
   letter-spacing: 1; }
 
-.header {
-  width: 100%;
-  margin: 0;
-  padding: 0; }
+.uniform {
+  margin: 0 auto; }
 
 .nav ul {
   background-color: #222d3f;
@@ -176,6 +174,41 @@ header {
   background-attachment: fixed;
   padding: 100px;
   height: 100%; }
+  header h1 {
+    font-family: 'Cinzel', serif;
+    color: #fff;
+    font-size: 72px;
+    margin: 0 auto;
+    line-height: 1;
+    text-shadow: 0px -3px 12px #bee0e7; }
+  header h1, header p {
+    text-align: center; }
+
+.circle {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  background: darkorange;
+  border-radius: 50%;
+  border: 10px outset black;
+  -webkit-box-shadow: inset 0px 1px 21px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px 1px 21px -1px rgba(0, 0, 0, 0.75); }
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 20px 100px 20px;
+  border-color: transparent transparent #000 transparent;
+  margin: 0 auto; }
+
+.tdown {
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 80px 20px 0 20px;
+  border-color: #333 transparent transparent transparent; }
 
 .container {
   width: 80%;
@@ -237,7 +270,9 @@ article {
     width: 29%;
     float: left;
     margin: 1% 1.5% 2% 2.5%;
-    padding-top: 23%; }
+    padding-top: 23%;
+    background-image: url(../images/doe.jpeg);
+    background-size: 100%; }
 
 aside {
   width: 30%;
@@ -245,6 +280,16 @@ aside {
 
 footer {
   clear: both;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#064000), to(#0d7f00));
-  background-image: -webkit-linear-gradient(bottom, #064000, #0d7f00);
-  background-image: linear-gradient(to top, #064000, #0d7f00); }
+  width: 100%;
+  position: absolute;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#222d3f), to(#4e647b));
+  background-image: -webkit-linear-gradient(bottom, #222d3f, #4e647b);
+  background-image: linear-gradient(to top, #222d3f, #4e647b); }
+  footer .lbox {
+    width: 30%;
+    float: left; }
+    footer .lbox ul {
+      border-right: 1px solid #000;
+      border-left: 1px solid #333; }
+      footer .lbox ul li {
+        list-style: none; }
