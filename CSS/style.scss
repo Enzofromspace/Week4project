@@ -15,7 +15,7 @@ html, body{
 	height: 100%;
 }
 body{
-	font-family: Helvetica, sans-serif;
+	font-family: 'News Cycle',Helvetica, sans-serif;
 	background: url(../images/greyzz.png);
 	margin:0;
 	line-height: 1.5;
@@ -78,7 +78,10 @@ header{
 			text-align: center;
 		}
 		P{
-
+		 color:$white;
+		 font-style: bold;
+		 font-size: 1.5em;
+		 text-shadow: 2px 5px 6px #000;
 		}
 }
 .circle{
@@ -149,7 +152,7 @@ article{
 	background: $llblue;
 	width: 70%;
 	float:left;
-	border-top: 5px solid $dblue;
+	border-top: 5px solid $dgreen;
 	h2{
 		margin-top: 10px;
 	}
@@ -177,11 +180,18 @@ article{
 	 }
 	 .team{
 	 	width: 29%;
+	 	height: 225px;
+	 	padding-left: 3px;
 	 	float:left;
 	 	margin: 1% 1.5% 2% 2.5%;
-	 	padding-top: 23%;
-	 	background-image: url(../images/doe.jpeg);
-	 	background-size: 100%;
+	 	border: 2px solid $mgreen;
+	 	background-image: url(http://placehold.it/219x64);
+	 	a{
+	 		color: $dgreen;
+	 		&:hover{
+ 	 			color:#bee0e7;
+ 			}
+	 	}
 	 }
 
 }
@@ -189,6 +199,7 @@ article{
 aside{
 	width: 30%;
 	float:right;
+
 }
 
 footer{

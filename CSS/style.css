@@ -137,7 +137,7 @@ html, body {
   height: 100%; }
 
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: 'News Cycle',Helvetica, sans-serif;
   background: url(../images/greyzz.png);
   margin: 0;
   line-height: 1.5;
@@ -183,6 +183,11 @@ header {
     text-shadow: 0px -3px 12px #bee0e7; }
   header h1, header p {
     text-align: center; }
+  header P {
+    color: mintcream;
+    font-style: bold;
+    font-size: 1.5em;
+    text-shadow: 2px 5px 6px #000; }
 
 .circle {
   margin: 0 auto;
@@ -246,7 +251,7 @@ article {
   background: #bee0e7;
   width: 70%;
   float: left;
-  border-top: 5px solid #222d3f; }
+  border-top: 5px solid #064000; }
   article h2 {
     margin-top: 10px; }
   article p {
@@ -268,11 +273,16 @@ article {
     color: #6b6f78; }
   .teambox .team {
     width: 29%;
+    height: 225px;
+    padding-left: 3px;
     float: left;
     margin: 1% 1.5% 2% 2.5%;
-    padding-top: 23%;
-    background-image: url(../images/doe.jpeg);
-    background-size: 100%; }
+    border: 2px solid #0d7f00;
+    background-image: url(http://placehold.it/219x64); }
+    .teambox .team a {
+      color: #064000; }
+      .teambox .team a:hover {
+        color: #bee0e7; }
 
 aside {
   width: 30%;
@@ -286,8 +296,8 @@ footer {
   background-image: -webkit-linear-gradient(bottom, #222d3f, #4e647b);
   background-image: linear-gradient(to top, #222d3f, #4e647b); }
   footer .lbox {
-    width: 30%;
-    float: left; }
+    width: 20%;
+    float: right; }
     footer .lbox ul {
       border-right: 1px solid #000;
       border-left: 1px solid #333; }

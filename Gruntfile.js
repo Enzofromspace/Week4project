@@ -36,6 +36,14 @@ module.exports = function(grunt) {
  				base: ''
  			}
  		}
+ 	},
+ 	svginject: {
+ 		all : {
+ 			options:{},
+ 			files:{
+ 				'svg/SVGinject.js': ['svg/*.svg'],
+ 			}
+ 		}
  	}
  });
 
@@ -43,7 +51,8 @@ module.exports = function(grunt) {
  grunt.loadNpmTasks('grunt-contrib-watch');
  grunt.loadNpmTasks('grunt-autoprefixer');
  grunt.loadNpmTasks('grunt-contrib-connect');
+ grunt.loadNpmTasks('grunt-svginject');
 
  // Default task(s).  Make sure names match
- grunt.registerTask('default', ['connect','watch']);
+ grunt.registerTask('default', ['svginject', 'connect','watch']);
 };
